@@ -150,6 +150,7 @@ const Contact = () => {
             />
             <textarea
               rows={5}
+              required
               placeholder="Message"
               name="message"
               className="p-5 text-xl! placeholder:text-xl bg-transparent border border-white text-white rounded-2xl"
@@ -159,11 +160,11 @@ const Contact = () => {
             </button>
            
             {error && <p className="text-2xl font-semibold text-red-500">
-                        Something went wrong!
+                        Something went wrong. Please try again.
                     </p>
             }
             {success && <p className="text-2xl font-semibold text-green-500">
-                        Form sent successfully!
+                        Thanks for reaching out!
                     </p>}
           </motion.form>
         </div>
