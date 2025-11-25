@@ -47,7 +47,7 @@ const Sidebar = () => {
       </motion.a>
       <motion.a 
        variants={itemVariants}
-       href=""> 
+        href="/Nikunj_resume.pdf" target="_blank" rel="noopener noreferrer"> 
           <BsFileText className="hover:text-amber-400 cursor-pointer" />
        </motion.a>
      

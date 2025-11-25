@@ -84,7 +84,7 @@ const Hero = () => {
                 <span>Contact</span>
               </div>
             </a>
-            <a href="">
+            <a  href="/Nikunj_resume.pdf" target="_blank" rel="noopener noreferrer">
               <div className="py-3 px-12 rounded-4xl font-semibold border border-amber-400 bg-transparent text-2xl text-orange-400 hover:bg-amber-400 hover:text-black">
                 <span>Resume</span>
               </div>
