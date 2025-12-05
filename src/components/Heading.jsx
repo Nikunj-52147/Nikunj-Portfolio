@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
-
-const Heading = ({ number, title }) => {
+import { useBreakpoint } from "../hooks/useBreakpoint";
 
 const wrapper = {
     hidden: {},
@@ -31,7 +30,13 @@ const wrapper = {
     },
   };
 
+const Heading = ({ number, title }) => {
 
+   const isLaptop = useBreakpoint();
+   return isLaptop ? <Laptop number={number} title={title}/> : <Mobile number={number} title={title}/>
+}
+
+const Laptop = ({ number, title }) => {
   return (
     <motion.div variants={wrapper}
       initial="hidden"
@@ -44,6 +49,21 @@ const wrapper = {
       <motion.div variants={bgVariant} className="text-[12rem] font-extrabold text-[#0d0f14] -mt-16 ">
         {title.toUpperCase()}
       </motion.div>
+    </motion.div>
+  )
+}
+
+const Mobile = ({ number, title }) => {
+  return (
+    <motion.div variants={wrapper}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.4 }} className="flex justify-between">
+      <div >
+        <motion.div variants={fadeUp} className="text-6xl font-semibold text-[#0d0f14]">{number}</motion.div>
+        <motion.div variants={fadeUp}  className="text-orange-400 text-6xl font-semibold">{title}</motion.div>
+      </div>
+      
     </motion.div>
   )
 }

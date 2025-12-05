@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <div className="flex">
+      <div className="flex overflow-x-hidden">
         <div className="w-[92%]">{children}</div>
         <div className="w-[8%] flex justify-center mt-20">
           <Sidebar />

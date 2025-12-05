@@ -3,9 +3,9 @@ import { FaGithub } from "react-icons/fa";
 import { BsFileText } from "react-icons/bs";
 import { SiFrontendmentor } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useBreakpoint } from "../hooks/useBreakpoint";
 
-const Sidebar = () => {
-  const sideVariants = {
+const sideVariants = {
     hidden: { y: -50, opacity: 0 },
     visible: {
       y: 0,
@@ -24,8 +24,17 @@ const Sidebar = () => {
     visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
   };
 
+const Sidebar = () => {
+  
+  const isLaptop = useBreakpoint();
+  return isLaptop ? <Laptop /> : <Mobile />
+    
+};
+
+const Laptop = () => {
   return (
-    <motion.div
+
+  <motion.div
       variants={sideVariants}
       initial="hidden"
       animate="visible"
@@ -67,6 +76,13 @@ const Sidebar = () => {
       </motion.a>
     </motion.div>
   );
-};
+}
+
+const Mobile = () => {
+  return (
+    <>
+    </>
+  )
+}
 
 export default Sidebar;
