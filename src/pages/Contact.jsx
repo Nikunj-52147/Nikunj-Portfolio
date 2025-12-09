@@ -98,7 +98,7 @@ const Laptop = () => {
           </motion.p>
           <motion.div className="item text-xl" variants={variants}>
             <h2>Mail</h2>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikunj51260@gmail.com&su=Hello&body=Hi" target="_blank" className=" text-[#78797d]">nikunj51260@gamil.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikunj51260@gmail.com&su=Hello&body=Hi" target="_blank" className=" text-[#78797d]">nikunj51260@gmail.com</a>
           </motion.div>
           <motion.div className="item text-xl" variants={variants}>
             <h2>Phone</h2>
@@ -258,11 +258,11 @@ const Mobile = () => {
           </motion.p>
           <motion.div className="item text-xl" variants={variants}>
             <h2>Mail</h2>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikunj51260@gmail.com&su=Hello&body=Hi" target="_blank" className=" text-[#78797d]">xyz@gamil.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikunj51260@gmail.com&su=Hello&body=Hi" target="_blank" className=" text-[#78797d]">nikunj51260@gmail.com</a>
           </motion.div>
           <motion.div className="item text-xl" variants={variants}>
             <h2>Phone</h2>
-            <span className=" text-[#78797d]">+91 1234567890</span>
+            <span className=" text-[#78797d]">+91 7359955272</span>
           </motion.div>
           <motion.div className="item text-xl" variants={variants}>
             <h2>Github Profile</h2>
