@@ -11,7 +11,7 @@ const skillItem = {
 };
 
 const Skill = ({ icon, title, bgColor }) => {
-  const isLaptop = useBreakpoint();
+  const isLaptop = useBreakpoint(); 
      return isLaptop ? <Laptop icon={icon} title={title} bgColor={bgColor}/> : <Mobile icon={icon} title={title} bgColor={bgColor}/>
 }
 

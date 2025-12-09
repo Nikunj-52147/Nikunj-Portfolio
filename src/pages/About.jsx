@@ -224,7 +224,7 @@ const Mobile = () => {
   return (
     <section
       id="about"
-      className="pl-5 min-h-screen bg-linear-[325deg,#090b0f_70%,#06090d_70%] bg-fixed"
+      className="pl-5 pt-15 min-h-screen bg-linear-[325deg,#090b0f_70%,#06090d_70%] bg-fixed"
     >
       <Heading number="01" title="About Me" />
       <div className="flex flex-col justify-between">
