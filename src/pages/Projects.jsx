@@ -149,7 +149,7 @@ const Mobile = () => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
       >
-        <Project
+         <Project
           image={Airbnb}
           title="Airbnb-clone"
           desc="A full-stack rental platform where users can sign up (including Google/GitHub OAuth), browse properties, mark favorites, make bookings, and manage their own listings. It also includes filtering by property type, dates, and guest count. Built with Next.js, TypeScript, MongoDB, and Prisma."
@@ -157,14 +157,23 @@ const Mobile = () => {
           link="https://villavista-mocha.vercel.app/"
           index={1}
         />
+        
+        <Project
+          image={Portfolio}
+          title="Personal Portfolio"
+          desc="A simple and clean personal portfolio built to showcase my projects, skills, and interests. It features smooth animations, a structured layout, and easy navigation across sections like About Me, Projects, and Contact. The focus of this site is to present my work clearly while keeping the design modern."
+          techArr={["React", "Tailwind", "Framer Motion"]}
+          link="https://villavista-mocha.vercel.app/"
+          index={2}
+        />
 
         <Project
-          image={Donuts}
-          title="Donut Store"
-          desc="A visually engaging donut store landing page featuring smooth, scroll-based animations powered by GSAP. Focused on delivering a fun, modern, and animated browsing experience, with an emphasis on clean UI and playful visuals."
-          techArr={["React", "GSAP", "Tailwind"]}
-          link="https://donut-store.vercel.app/"
-          index={2}
+          image={Headphones}
+          title="Beats Studio Pro"
+          desc="A product website inspired by Beats Studio Pro, built using React, GSAP and Tailwind CSS. It includes smooth scroll animations using GSAP to animate text and images. This project helped me practice basic animations,  and building clean UI components."
+          techArr={["React", "Tailwind", "GSAP"]}
+          link="https://beats-studio-pro-headphones.vercel.app/"
+          index={3}
         />
 
         <Project
@@ -173,7 +182,7 @@ const Mobile = () => {
           desc="A modern university landing page built with React and Tailwind CSS. It includes a smooth testimonial slider with clean transition effects. This project helped me practice component-based UI building and Tailwind styling. It focuses on clean sections, responsive design, and a simple user-friendly layout."
           techArr={["React", "Tailwind"]}
           link="https://educity-theta.vercel.app/"
-          index={3}
+          index={4}
         />
 
         <Project
@@ -182,17 +191,10 @@ const Mobile = () => {
           desc="A visually polished hero section for a watch brand, built using React, CSS, and GSAP. The page focuses on smooth animations and clean visual appeal rather than heavy functionality. It was a fun experiment in crafting aesthetic layouts and motion-driven UI."
           techArr={["React", "GSAP", "CSS"]}
           link="https://komono-watch-magnus-silver.vercel.app/"
-          index={4}
-        />
-
-        <Project
-          image={Portfolio}
-          title="Personal Portfolio"
-          desc="A simple and clean personal portfolio built to showcase my projects, skills, and interests. It features smooth animations, a structured layout, and easy navigation across sections like About Me, Projects, and Contact. The focus of this site is to present my work clearly while keeping the design modern."
-          techArr={["React", "Tailwind", "Framer Motion"]}
-          link="https://villavista-mocha.vercel.app/"
           index={5}
         />
+
+        
 
         <Project
           image={Kanban}
@@ -204,12 +206,21 @@ const Mobile = () => {
         />
 
         <Project
+          image={Donuts}
+          title="Donut Store"
+          desc="A visually engaging donut store landing page featuring smooth, scroll-based animations powered by GSAP. Focused on delivering a fun, modern, and animated browsing experience, with an emphasis on clean UI and playful visuals."
+          techArr={["React", "GSAP", "Tailwind"]}
+          link="https://donut-store.vercel.app/"
+          index={7}
+        />
+
+        <Project
           image={Snake}
           title="Snake Game"
           desc="A classic Snake game built using HTML, CSS, and JavaScript. It features smooth movement and uses localStorage to save the player’s high score on their device. A fun project focused on game logic and improving JavaScript fundamentals."
           techArr={["HTML", "CSS", "Javascript"]}
           link="https://nikunj-52147.github.io/GAME-Snake-Mania/"
-          index={7}
+          index={8}
         />
       </motion.div>
     </section>
