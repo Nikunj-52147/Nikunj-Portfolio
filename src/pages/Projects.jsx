@@ -123,7 +123,7 @@ const Laptop = () => {
           desc="A classic Snake game built using HTML, CSS, and JavaScript. It features smooth movement and uses localStorage to save the player’s high score on their device. A fun project focused on game logic and improving JavaScript fundamentals."
           techArr={["HTML", "CSS", "Javascript"]}
           link="https://nikunj-52147.github.io/GAME-Snake-Mania/"
-          index={7}
+          index={8}
         />
       </motion.div>
     </section>
