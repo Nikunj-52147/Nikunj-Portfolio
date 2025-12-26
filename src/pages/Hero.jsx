@@ -54,7 +54,7 @@ const Laptop = () => {
         <motion.div className="flex flex-col" variants={item}>
           <div className="text-2xl  text-[#78797d]">
             <FiMapPin size={18} className="inline-block mb-2" />
-            <span className="text-center ml-2">Gujart, India</span>
+            <span className="text-center ml-2">Gujarat, India</span>
           </div>
           <motion.h1
             variants={item}
@@ -134,7 +134,7 @@ const Mobile = () => {
           
          <div className="text-2xl  text-[#78797d]">
             <FiMapPin size={18} className="inline-block mb-2" />
-            <span className="text-center ml-2">Gujart, India</span>
+            <span className="text-center ml-2">Gujarat, India</span>
           </div>
           <motion.h1
             variants={item}
